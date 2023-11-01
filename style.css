@@ -1,0 +1,96 @@
+body{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.container{
+    background-image: url(https://wallpapercave.com/wp/wp4075975.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -16em;
+}
+
+.container a:hover::before{
+    width: 9em;
+}
+button{
+    width: 9em;
+    height: 3em;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #a9a9a9,-6px -6px 12px #ffffff;
+}
+button::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #dc283a 0%, #e4389a 100%);
+    transition: .1s ease;
+    display: block;
+    z-index: -1;
+}
+button:hover::before{
+    width: 9em;
+}
+
+.container a{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.main{
+    font-size: 6rem;
+    font-weight: 900;
+    padding-top: 3em;
+}
+.main > span{
+    animation: glow 2.5s ease-in-out infinite;
+    text-decoration: underline;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 12px #d900ff, 0 0 50px #ed29b2, 0 0 100px #ff00ee;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.main > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.main > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.main > span:nth-child(4){
+    animation-delay: .6s;
+}
+.main > span:nth-child(5){
+    animation-delay: .8s;
+}
+.main > span:nth-child(6){
+    animation-delay: 1s ;
+}
+
+
