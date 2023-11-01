@@ -14,7 +14,7 @@ body{
     padding-bottom: 10em;
     margin-left: -1em;
     margin-right: -1em;
-    margin-top: -14em;
+    margin-top: -10em;
 }
 
 .container a:hover::before{
@@ -61,7 +61,7 @@ button:hover::before{
 .main{
     font-size: 6rem;
     font-weight: 900;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 .main > span{
     animation: glow 2.5s ease-in-out infinite;
